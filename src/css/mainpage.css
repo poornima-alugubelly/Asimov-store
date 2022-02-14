@@ -40,7 +40,8 @@
 
 .text-overlay {
 	font-family: var(--ternary-font);
-	font-size: 2rem;
+	font-size: 1.5rem;
+	align-items: center;
 }
 .text-overlay:hover {
 	background-color: transparent;
@@ -69,5 +70,11 @@
 	.collection-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 200px);
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-container {
+		margin: 5rem auto 2rem auto;
 	}
 }
