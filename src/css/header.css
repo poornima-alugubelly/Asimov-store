@@ -1,0 +1,25 @@
+.search-bar {
+	width: 30rem;
+	display: flex;
+	gap: 8px;
+	height: 2rem;
+}
+.search-bar .input {
+	width: 100%;
+}
+
+.icon-search {
+	height: 90%;
+	cursor: pointer;
+	background-color: none;
+}
+
+.search-bar button {
+	border: none;
+	background-color: transparent;
+}
+
+.nav-bar-links .flex-column {
+	align-items: center;
+	justify-content: center;
+}
