@@ -54,6 +54,12 @@
 	cursor: pointer;
 }
 
+.prices {
+	display: flex;
+	justify-content: space-between;
+	max-width: 30rem;
+}
+
 @media (max-width: 1024px) {
 	.filter-container {
 		position: fixed;
