@@ -7,10 +7,6 @@
 		"sidenav product product product product";
 }
 
-.filter-container .flex-row {
-	align-items: center;
-}
-
 .gap-xs {
 	gap: 0.5rem;
 }
@@ -26,4 +22,18 @@
 .input-checkbox::before {
 	width: 0.7rem;
 	height: 0.7rem;
+}
+
+.filter-wrapper {
+	width: 15rem;
+}
+
+.filter-section {
+	border-bottom: 1px solid var(--ternary-dark);
+	padding-bottom: 1rem;
+}
+
+.filter-title {
+	display: flex;
+	justify-content: space-between;
 }

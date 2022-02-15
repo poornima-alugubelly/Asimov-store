@@ -17,102 +17,225 @@
 		<link rel="stylesheet" href="/src/css/productpage.css" />
 	</head>
 	<body>
-       
-            <nav class="nav-bar shadow-bottom">
-                <a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
-                    <span class="toggle-bar"></span>
-                    <span class="toggle-bar"></span>
-                    <span class="toggle-bar"></span>
-                </a>
-                <div class="nav-bar-primary">
-                    <a href="index.html" class="nav-bar-logo">ASIMOV&#8734</a>
-                    <ul class="nav-bar-links">
-                        <li><a href="index.html" class="link-text link-active">Home</a></li>
-                        <li>
-                            <a href="./components/Alert/Alert.html" class="link-text"
-                                >Shop Now</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-    
-                <ul class="nav-bar-links">
-                    <div class="search-bar">
-                        <input class="input" type="text" />
-                        <button>
-                            <img class="icon-search" src="../assets/svg/search.svg" alt="" />
-                        </button>
-                    </div>
-    
-                    <div class="flex-column">
-                        <i class="fas fa-user btn-icon"></i>
-                        <span class="text-xs">Login</span>
-                    </div>
-                    <div class="flex-column">
-                        <div class="badge-wrapper">
-                            <i class="fas fa-heart btn-icon"></i>
-                            <span class="badge badge-top badge-s badge-red">11</span>
-                        </div>
-                        <span class="text-xs">Wish List</span>
-                    </div>
-                    <div class="flex-column">
-                        <div class="badge-wrapper">
-                            <i class="fas fa-shopping-cart btn-icon"></i>
-                            <span class="badge badge-top badge-s badge-red">11</span>
-                        </div>
-                        <span class="text-xs">Cart</span>
-                    </div>
-                </ul>
-                <ul class="drawer" id="drawer">
-                    <div class="drawer-header">
-                        <a href="./index.html" class="nav-bar-logo">ASIMOV &#8734</a>
-                        <button class="btn btn-dismiss">
-                            <img src="./assets/SVG/dismiss-blue.svg" alt="" />
-                        </button>
-                    </div>
-    
-                    <li class="list-item">
-                        <a href="./index.html" class="link-text">Home</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="./components/Alert/Alert.html" class="link-text"
-                            >Documentation</a
-                        >
-                    </li>
-                </ul>
-            </nav>
-            <div class="filter-wrapper">
-                <section class="filter-section ">
-                    
-                    <ul class="filter-input-wrapper flex-column gap-xs">
-                        <h3 >SORT</h3>
-                     <li>
-                        <label for="radio-input-1" class="flex-row gap-xs">
-                            <input
-                                type="radio"
-                                class="input-radio element-round"
-                                id="radio-input-1"
-                                name="radio-item"
-                            />
-                        
-                            <span>Blue Pill</span>
-                        </li>
-                        </label>
-                        <li>
-                        <label for="radio-input-2" class="flex-row gap-xs">
-                            <input
-                                type="radio"
-                                class="input-radio element-round"
-                                id="radio-input-2"
-                                name="radio-item"
-                            />
-                            <span>Red Pill</span>
-                        </label>
-                    </li>
-                    </ul>
-                </section>
-            </div>
-   
-        
-    </body>
+		<nav class="nav-bar shadow-bottom">
+			<a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+			</a>
+			<div class="nav-bar-primary">
+				<a href="index.html" class="nav-bar-logo">ASIMOV ∞</a>
+				<ul class="nav-bar-links">
+					<li><a href="index.html" class="link-text link-active">Home</a></li>
+					<li>
+						<a href="./components/Alert/Alert.html" class="link-text"
+							>Shop Now</a
+						>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="nav-bar-links">
+				<div class="search-bar">
+					<input class="input" type="text" />
+					<button>
+						<img class="icon-search" src="../assets/svg/search.svg" alt="" />
+					</button>
+				</div>
+
+				<div class="flex-column">
+					<i class="fas fa-user btn-icon"></i>
+					<span class="text-xs">Login</span>
+				</div>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<i class="fas fa-heart btn-icon"></i>
+						<span class="badge badge-top badge-s badge-red">11</span>
+					</div>
+					<span class="text-xs">Wish List</span>
+				</div>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<i class="fas fa-shopping-cart btn-icon"></i>
+						<span class="badge badge-top badge-s badge-red">11</span>
+					</div>
+					<span class="text-xs">Cart</span>
+				</div>
+			</ul>
+			<ul class="drawer" id="drawer">
+				<div class="drawer-header">
+					<a href="./index.html" class="nav-bar-logo">ASIMOV ∞</a>
+					<button class="btn btn-dismiss">
+						<img src="./assets/SVG/dismiss-blue.svg" alt="" />
+					</button>
+				</div>
+
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Home</a>
+				</li>
+				<li class="list-item">
+					<a href="./components/Alert/Alert.html" class="link-text"
+						>Documentation</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div class="filter-wrapper padding-s flex-column gap-s">
+			<section class="filter-section filter-title">
+				<h3 class="text-s">FILTERS</h3>
+				<span class="link-text text-xs">Clear All</span>
+			</section>
+			<section class="filter-section">
+				<ul class="filter-input-wrapper flex-column gap-xs">
+					<h3>CATEGORY</h3>
+					<li>
+						<label for="checkbox-accessories" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-accessories"
+								class="input-checkbox"
+							/>
+							Accessories
+						</label>
+					</li>
+					<li>
+						<label for="checkbox-books" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-books"
+								class="input-checkbox"
+							/>
+							Books
+						</label>
+					</li>
+					<li>
+						<label for="checkbox-clothing" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-clothing"
+								class="input-checkbox"
+							/>
+							Clothing
+						</label>
+					</li>
+					<li>
+						<label for="checkbox-living" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-living"
+								class="input-checkbox"
+							/>
+							Home & Living
+						</label>
+					</li>
+					<li>
+						<label for="checkbox-stationery" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-stationery"
+								class="input-checkbox"
+							/>
+							Stationery
+						</label>
+					</li>
+					<li>
+						<label for="checkbox-wallart" class="flex-row gap-xs">
+							<input
+								type="checkbox"
+								name="checkbox"
+								id="checkbox-wallart"
+								class="input-checkbox"
+							/>
+							Wall Art
+						</label>
+					</li>
+				</ul>
+			</section>
+			<section class="filter-section">
+				<ul class="filter-input-wrapper flex-column gap-xs">
+					<h3>RATING</h3>
+					<li>
+						<label for="input-4star" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="input-4star"
+								name="radio-item"
+							/>
+
+							<span>4 Stars & above</span>
+						</label>
+					</li>
+
+					<li>
+						<label for="input-3star" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="input-3star"
+								name="radio-item"
+							/>
+							<span>3 Stars & above</span>
+						</label>
+					</li>
+					<li>
+						<label for="input-2star" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="input-2star"
+								name="radio-item"
+							/>
+							<span>2 Stars & above</span>
+						</label>
+					</li>
+					<li>
+						<label for="input-1star" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="input-1star"
+								name="radio-item"
+							/>
+							<span>1 Stars & above</span>
+						</label>
+					</li>
+				</ul>
+			</section>
+			<section class="filter-section">
+				<ul class="filter-input-wrapper flex-column gap-xs">
+					<h3>SORT</h3>
+					<li>
+						<label for="price-L2H" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="price-L2H"
+								name="radio-item"
+							/>
+
+							<span>Price - Low to High</span>
+						</label>
+					</li>
+
+					<li>
+						<label for="price-H2L" class="flex-row gap-xs">
+							<input
+								type="radio"
+								class="input-radio element-round"
+								id="price-H2L"
+								name="radio-item"
+							/>
+							<span>Price - Low to High</span>
+						</label>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
 </html>
