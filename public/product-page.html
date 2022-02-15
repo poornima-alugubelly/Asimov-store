@@ -36,20 +36,20 @@
 			</div>
 
 			<ul class="nav-bar-links">
-				<div class="search-bar">
+				<!-- <div class="search-bar">
 					<input class="input" type="text" />
 					<button>
 						<img class="icon-search" src="../assets/svg/search.svg" alt="" />
 					</button>
-				</div>
+				</div> -->
 
 				<div class="flex-column">
-					<i class="fas fa-user btn-icon"></i>
+					<i class="far fa-user btn-icon"></i>
 					<span class="text-xs">Login</span>
 				</div>
 				<div class="flex-column">
 					<div class="badge-wrapper">
-						<i class="fas fa-heart btn-icon"></i>
+						<i class="far fa-heart btn-icon"></i>
 						<span class="badge badge-top badge-s badge-red">11</span>
 					</div>
 					<span class="text-xs">Wish List</span>
@@ -80,162 +80,487 @@
 				</li>
 			</ul>
 		</nav>
-		<div class="filter-wrapper padding-s flex-column gap-s">
-			<section class="filter-section filter-title">
-				<h3 class="text-s">FILTERS</h3>
-				<span class="link-text text-xs">Clear All</span>
-			</section>
-			<section class="filter-section">
-				<ul class="filter-input-wrapper flex-column gap-xs">
-					<h3>CATEGORY</h3>
-					<li>
-						<label for="checkbox-accessories" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-accessories"
-								class="input-checkbox"
-							/>
-							Accessories
-						</label>
-					</li>
-					<li>
-						<label for="checkbox-books" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-books"
-								class="input-checkbox"
-							/>
-							Books
-						</label>
-					</li>
-					<li>
-						<label for="checkbox-clothing" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-clothing"
-								class="input-checkbox"
-							/>
-							Clothing
-						</label>
-					</li>
-					<li>
-						<label for="checkbox-living" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-living"
-								class="input-checkbox"
-							/>
-							Home & Living
-						</label>
-					</li>
-					<li>
-						<label for="checkbox-stationery" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-stationery"
-								class="input-checkbox"
-							/>
-							Stationery
-						</label>
-					</li>
-					<li>
-						<label for="checkbox-wallart" class="flex-row gap-xs">
-							<input
-								type="checkbox"
-								name="checkbox"
-								id="checkbox-wallart"
-								class="input-checkbox"
-							/>
-							Wall Art
-						</label>
-					</li>
-				</ul>
-			</section>
-			<section class="filter-section">
-				<ul class="filter-input-wrapper flex-column gap-xs">
-					<h3>RATING</h3>
-					<li>
-						<label for="input-4star" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="input-4star"
-								name="radio-item"
-							/>
+		<div class="grid-30-70">
+			<div class="filter-container padding-s flex-column gap-s">
+				<section class="filter-section filter-title">
+					<h3 class="text-s filter-option">FILTERS</h3>
+					<span class="link-text text-xs clear-option">Clear All</span>
+				</section>
+				<div class="filter-wrapper flex-column gap-s">
+					<section class="filter-section">
+						<ul class="filter-input-wrapper flex-column gap-xs">
+							<h3>CATEGORY</h3>
+							<li>
+								<label for="checkbox-accessories" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-accessories"
+										class="input-checkbox"
+									/>
+									Accessories
+								</label>
+							</li>
+							<li>
+								<label for="checkbox-books" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-books"
+										class="input-checkbox"
+									/>
+									Books
+								</label>
+							</li>
+							<li>
+								<label for="checkbox-clothing" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-clothing"
+										class="input-checkbox"
+									/>
+									Clothing
+								</label>
+							</li>
+							<li>
+								<label for="checkbox-living" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-living"
+										class="input-checkbox"
+									/>
+									Home & Living
+								</label>
+							</li>
+							<li>
+								<label for="checkbox-stationery" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-stationery"
+										class="input-checkbox"
+									/>
+									Stationery
+								</label>
+							</li>
+							<li>
+								<label for="checkbox-wallart" class="flex-row gap-xs">
+									<input
+										type="checkbox"
+										name="checkbox"
+										id="checkbox-wallart"
+										class="input-checkbox"
+									/>
+									Wall Art
+								</label>
+							</li>
+						</ul>
+					</section>
+					<section class="filter-section">
+						<ul class="filter-input-wrapper flex-column gap-xs">
+							<h3>RATING</h3>
+							<li>
+								<label for="input-4star" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="input-4star"
+										name="radio-item"
+									/>
 
-							<span>4 Stars & above</span>
-						</label>
-					</li>
+									<span>4 Stars & above</span>
+								</label>
+							</li>
 
-					<li>
-						<label for="input-3star" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="input-3star"
-								name="radio-item"
-							/>
-							<span>3 Stars & above</span>
-						</label>
-					</li>
-					<li>
-						<label for="input-2star" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="input-2star"
-								name="radio-item"
-							/>
-							<span>2 Stars & above</span>
-						</label>
-					</li>
-					<li>
-						<label for="input-1star" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="input-1star"
-								name="radio-item"
-							/>
-							<span>1 Stars & above</span>
-						</label>
-					</li>
-				</ul>
-			</section>
-			<section class="filter-section">
-				<ul class="filter-input-wrapper flex-column gap-xs">
-					<h3>SORT</h3>
-					<li>
-						<label for="price-L2H" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="price-L2H"
-								name="radio-item"
-							/>
+							<li>
+								<label for="input-3star" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="input-3star"
+										name="radio-item"
+									/>
+									<span>3 Stars & above</span>
+								</label>
+							</li>
+							<li>
+								<label for="input-2star" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="input-2star"
+										name="radio-item"
+									/>
+									<span>2 Stars & above</span>
+								</label>
+							</li>
+							<li>
+								<label for="input-1star" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="input-1star"
+										name="radio-item"
+									/>
+									<span>1 Stars & above</span>
+								</label>
+							</li>
+						</ul>
+					</section>
+					<section class="filter-section">
+						<ul class="filter-input-wrapper flex-column gap-xs">
+							<h3>SORT</h3>
+							<li>
+								<label for="price-L2H" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="price-L2H"
+										name="radio-item"
+									/>
 
-							<span>Price - Low to High</span>
-						</label>
-					</li>
+									<span>Price - Low to High</span>
+								</label>
+							</li>
 
-					<li>
-						<label for="price-H2L" class="flex-row gap-xs">
-							<input
-								type="radio"
-								class="input-radio element-round"
-								id="price-H2L"
-								name="radio-item"
-							/>
-							<span>Price - Low to High</span>
-						</label>
-					</li>
-				</ul>
-			</section>
+							<li>
+								<label for="price-H2L" class="flex-row gap-xs">
+									<input
+										type="radio"
+										class="input-radio element-round"
+										id="price-H2L"
+										name="radio-item"
+									/>
+									<span>Price - Low to High</span>
+								</label>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+			<div class="grid-product-layout">
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/cbpoptshirt.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/dune book.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/rickn morty.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="../assets/jpg/dunebook2.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="card card-vertical">
+					<div class="img-container">
+						<img
+							src="/assets/jpg/tshirt1.jpg"
+							alt="product image"
+							class="img-responsive"
+						/>
+					</div>
+
+					<div class="card-content padding-s">
+						<h2 class="card-title">
+							Lorem ipsum <i class="fa-fw far fa-heart btn-icon"></i>
+						</h2>
+
+						<span>Lorem ipsum dolor sit amet.</span>
+
+						<div class="gap-s">
+							<span class="txt-bold"> Rs.899</span>
+							<span class="txt-crossed-off">Rs.999</span>
+							<span class="txt-high-light">10%</span>
+						</div>
+						<div class="card-footer">
+							<button class="btn btn-primary-solid">
+								<i class="fa-fw fas fa-shopping-cart"> </i>
+								<span>Add to Cart</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
