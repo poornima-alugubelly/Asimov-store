@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cart Page</title>
+		<link rel="stylesheet" href="https://asimov-ui.netlify.app/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/src/css/header.css" />
+		<link rel="stylesheet" href="/src/css/mainpage.css" />
+		<link rel="stylesheet" href="/src/css/cartpage.css" />
+		<link rel="stylesheet" href="/src/css/productpage.css" />
+	</head>
+	<body>
+		<div class="cart-page-container">
+			<h2 class="padding-l" style="text-align: center">My Cart</h2>
+			<div class="grid-60-40 gap-m">
+				<div class="cart-products-wrapper">
+					<div class="card card-horizontal padding-s">
+						<div class="img-container">
+							<img
+								src="../assets/jpg/dune book.jpg"
+								alt="product image"
+								class="img-responsive"
+							/>
+						</div>
+
+						<div class="card-content gap-xs">
+							<h2 class="card-title">Lorem ipsum</h2>
+
+							<div class="quantity">
+								<button
+									class="quantity-item element-round txt-bold flex-center"
+								>
+									+
+								</button>
+								<button class="quantity-item rounded-border flex-center">
+									2
+								</button>
+								<button
+									class="quantity-item element-round txt-bold flex-center"
+								>
+									-
+								</button>
+							</div>
+
+							<div class="gap-s">
+								<span class="txt-bold"> Rs.899</span>
+								<span class="txt-crossed-off">Rs.999</span>
+								<span class="txt-high-light">10%</span>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-primary-solid">
+									<i class="fa-fw fas fa-shopping-cart"> </i>
+									<span>Remove from Cart</span>
+								</button>
+								<button class="btn btn-primary-outline">
+									<i class="fa-fw fas fa-shopping-cart"> </i>
+									<span>Move to wishlist</span>
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="card card-horizontal padding-s">
+						<div class="img-container">
+							<img
+								src="../assets/jpg/dunebook2.jpg"
+								alt="product image"
+								class="img-responsive"
+							/>
+						</div>
+
+						<div class="card-content gap-xs">
+							<h2 class="card-title">Lorem ipsum</h2>
+
+							<div class="quantity">
+								<button
+									class="quantity-item element-round txt-bold flex-center"
+								>
+									+
+								</button>
+								<button class="quantity-item rounded-border flex-center">
+									2
+								</button>
+								<button
+									class="quantity-item element-round txt-bold flex-center"
+								>
+									-
+								</button>
+							</div>
+
+							<div class="gap-s">
+								<span class="txt-bold"> Rs.899</span>
+								<span class="txt-crossed-off">Rs.999</span>
+								<span class="txt-high-light">10%</span>
+							</div>
+							<div class="card-footer">
+								<button class="btn btn-primary-solid">
+									<i class="fa-fw fas fa-shopping-cart"> </i>
+									<span>Remove from Cart</span>
+								</button>
+								<button class="btn btn-primary-outline">
+									<i class="fa-fw fas fa-shopping-cart"> </i>
+									<span>Move to wishlist</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cart-total-wrapper flex-column gap-s">
+					<div class="flex-column gap-xs">
+						<span class="txt-bold">COUPONS</span>
+						<input type="text" placeholder="Apply Coupon..." class="input" />
+					</div>
+
+					<ul class="flex-column gap-xs">
+						<li class="txt-bold">PRICE DETAILS (4 items):</li>
+						<li class="flex-space-between">
+							<span>Total MRP:</span> <span>₹2754.00</span>
+						</li>
+						<li class="flex-space-between">
+							<span>Total Discount:</span>
+							<span>₹2754.00</span>
+						</li>
+						<li class="flex-space-between">
+							<span>Delivery fee:</span> <span>₹2754.00</span>
+						</li>
+						<li class="flex-space-between txt-bold text-s">
+							<span>Total:</span> <span>₹2754.00</span>
+						</li>
+					</ul>
+					<button class="btn btn-primary-solid">Place Order</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
