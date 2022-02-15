@@ -1,0 +1,29 @@
+.grid-productpage {
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-template-areas:
+		"sidenav product product product product"
+		"sidenav product product product product"
+		"sidenav product product product product";
+}
+
+.filter-container .flex-row {
+	align-items: center;
+}
+
+.gap-xs {
+	gap: 0.5rem;
+}
+
+.input-radio,
+.input-checkbox {
+	width: 1.2rem;
+	height: 1.2rem;
+	border: 2px solid var(--primary-dark);
+}
+
+.input-radio::before,
+.input-checkbox::before {
+	width: 0.7rem;
+	height: 0.7rem;
+}
