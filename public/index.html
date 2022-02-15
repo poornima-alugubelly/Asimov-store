@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Asimov-store</title>
+		<link rel="stylesheet" href="https://asimov-ui.netlify.app/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+			integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="/src/css/header.css" />
+		<link rel="stylesheet" href="/src/css/mainpage.css" />
+	</head>
+	<body>
+		<nav class="nav-bar shadow-bottom">
+			<a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+			</a>
+			<div class="nav-bar-primary">
+				<a href="./index.html" class="nav-bar-logo">ASIMOV∞</a>
+				<ul class="nav-bar-links">
+					<li><a href="./index.html" class="link-text link-active">Home</a></li>
+					<li>
+						<a href="./public/product-page.html" class="link-text">Shop Now</a>
+					</li>
+				</ul>
+			</div>
+
+			<ul class="nav-bar-links">
+				<div class="search-bar">
+					<input class="input" type="text" />
+					<button>
+						<img
+							class="icon-search"
+							src="../assets/svg/search.svg"
+							alt="search"
+						/>
+					</button>
+				</div>
+
+				<div class="flex-column">
+					<i class="fas fa-user btn-icon"></i>
+					<span class="text-xxs">Login</span>
+				</div>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<i class="fas fa-heart btn-icon"></i>
+						<span class="badge badge-top badge-s badge-red">11</span>
+					</div>
+					<span class="text-xxs">Wish List</span>
+				</div>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<i class="fas fa-shopping-cart btn-icon"></i>
+						<span class="badge badge-top badge-s badge-red">11</span>
+					</div>
+					<span class="text-xxs">Cart</span>
+				</div>
+			</ul>
+			<ul class="drawer" id="drawer">
+				<div class="drawer-header">
+					<a href="./index.html" class="nav-bar-logo">ASIMOV∞</a>
+					<button class="btn btn-dismiss">
+						<img src="./assets/SVG/dismiss-blue.svg" alt="" />
+					</button>
+				</div>
+
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Home</a>
+				</li>
+				<li class="list-item">
+					<a href="./public/product-page.html" class="link-text"
+						>Documentation</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div class="main-container main-container-gutter">
+			<div class="catergory-container gap-l grid-4-column-s">
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/dune book.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Books</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/rickn morty.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Wall Art</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/cbpoptshirt.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Clothing</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/evafig.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Figurines</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/dune book.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Figurines</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="../assets/jpg/dune book.jpg"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Figurines</div>
+				</div>
+			</div>
+			<main class="container-banner padding-s gap-l holo-bg">
+				<div class="hero-image">
+					<img
+						src="../assets/svg/delivery.svg"
+						class="img-responsive"
+						alt="hero image"
+					/>
+				</div>
+				<div class="flex-column gap-s">
+					<p class="text-xl text-heading txt-high-light">ASIMOV∞</p>
+					<p class="text-xl">
+						Products spanning multiple verses just a click away
+					</p>
+					<button class="btn btn-primary-solid btn-lg">EXPLORE NOW</button>
+				</div>
+			</main>
+			<div class="collection-container gap-l">
+				<div class="img-container card-shadow-dark">
+					<img
+						src="https://picsum.photos/1200/300"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Clearance Sale</div>
+				</div>
+				<div class="img-container card-shadow-dark">
+					<img
+						src="https://picsum.photos/1200/300"
+						class="img-responsive"
+						alt="product image"
+					/>
+					<div class="text-overlay">Just In</div>
+				</div>
+			</div>
+		</div>
+		<footer class="footer flex-column">
+			<p>Made by poornima</p>
+			<ul class="social-links list-non-bullet flex-center">
+				<li class="list-item-inline">
+					<a
+						class="link"
+						href="https://github.com/poornima-alugubelly"
+						target="_blank"
+					>
+						<i class="fa-fw fab fa-github fa-2x btn-icon"></i>
+					</a>
+				</li>
+				<li class="list-item-inline">
+					<a
+						class="link"
+						href="https://www.linkedin.com/in/poornima-alugubelly-aa13291b6/"
+						target="_blank"
+					>
+						<i class="fa-fw fab fa-linkedin fa-2x btn-icon"></i>
+					</a>
+				</li>
+				<li class="list-item-inline">
+					<a
+						class="link"
+						href="https://twitter.com/Moony_codes "
+						target="_blank"
+					>
+						<i class="fa-fw fab fa-twitter fa-2x btn-icon"></i>
+					</a>
+				</li>
+			</ul>
+			<small>© 2022 Asimov Creations</small>
+			<small
+				><a class="acknowledgement" href="https://storyset.com/technology"
+					>Technology illustrations by Storyset</a
+				>
+				<a href="https://storyset.com/online"
+					>Online illustrations by Storyset</a
+				>
+				-->
+				<a href="https://storyset.com/business"
+					>Business illustrations by Storyset</a
+				>
+			</small>
+		</footer>
+	</body>
+</html>
