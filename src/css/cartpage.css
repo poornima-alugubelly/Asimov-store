@@ -40,12 +40,15 @@
 	height: 1.5rem;
 	width: 1.5rem;
 	border: 1px solid var(--ternary-dark);
-
 	font-size: 1rem;
 	color: var(--secondary-color);
 	background-color: inherit;
+}
 
-	padding: 0.5rem;
+.quantity-item::-webkit-outer-spin-button,
+.quantity-item::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 @media (max-width: 1024px) {
