@@ -3,10 +3,12 @@
 	flex-direction: column;
 	gap: 2rem;
 
+	align-items: center;
+}
+
+.main-container-gutter {
 	width: 80%;
 	margin: 2rem auto;
-
-	align-items: center;
 }
 
 .grid-4-column-s {
@@ -40,7 +42,8 @@
 
 .text-overlay {
 	font-family: var(--ternary-font);
-	font-size: 2rem;
+	font-size: 1.5rem;
+	align-items: center;
 }
 .text-overlay:hover {
 	background-color: transparent;
@@ -69,5 +72,11 @@
 	.collection-container {
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(2, 200px);
+	}
+}
+
+@media (max-width: 1024px) {
+	.main-container-gutter {
+		margin: 5rem auto 2rem auto;
 	}
 }
