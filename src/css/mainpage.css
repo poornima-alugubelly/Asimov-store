@@ -3,10 +3,12 @@
 	flex-direction: column;
 	gap: 2rem;
 
+	align-items: center;
+}
+
+.main-container-gutter {
 	width: 80%;
 	margin: 2rem auto;
-
-	align-items: center;
 }
 
 .grid-4-column-s {
@@ -74,7 +76,7 @@
 }
 
 @media (max-width: 1024px) {
-	.main-container {
+	.main-container-gutter {
 		margin: 5rem auto 2rem auto;
 	}
 }
