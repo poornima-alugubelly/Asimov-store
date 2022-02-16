@@ -43,15 +43,24 @@
 }
 
 .text-overlay {
-	font-family: var(--ternary-font);
 	font-size: 1.5rem;
-	align-items: center;
 }
-.text-overlay:hover {
-	background-color: transparent;
-	color: var(--primary-color);
-	opacity: 1;
+
+@media (max-width: 768px) {
+	.grid-4-column-s {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	.collection-container {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, 200px);
+	}
+
+	.text-overlay {
+		font-size: 0.5rem;
+	}
 }
+
 @media (max-width: 992px) {
 	.grid-6-column {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -63,17 +72,6 @@
 
 	.container-banner {
 		grid-template-columns: 1fr;
-	}
-}
-
-@media (max-width: 768px) {
-	.grid-4-column-s {
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-	}
-
-	.collection-container {
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(2, 200px);
 	}
 }
 
