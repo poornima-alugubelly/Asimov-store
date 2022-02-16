@@ -16,10 +16,12 @@
 	grid-template-columns: repeat(6, minmax(0, 1fr));
 	justify-content: center;
 }
+
 .main-container .img-container {
 	height: 100%;
 	width: 100%;
 	position: relative;
+	cursor: pointer;
 }
 
 .container-banner {
