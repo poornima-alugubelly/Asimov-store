@@ -17,11 +17,6 @@
 	</head>
 	<body>
 		<nav class="nav-bar shadow-bottom">
-			<a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
-				<span class="toggle-bar"></span>
-				<span class="toggle-bar"></span>
-				<span class="toggle-bar"></span>
-			</a>
 			<div class="nav-bar-primary">
 				<a href="./index.html" class="nav-bar-logo">ASIMOV∞</a>
 				<ul class="nav-bar-links">
@@ -31,26 +26,25 @@
 					</li>
 				</ul>
 			</div>
+			<div class="search-bar input">
+				<input type="text" />
+				<button>
+					<img
+						class="icon-search"
+						src="../assets/svg/search.svg"
+						alt="search"
+					/>
+				</button>
+			</div>
 
-			<ul class="nav-bar-links">
-				<div class="search-bar">
-					<input class="input" type="text" />
-					<button>
-						<img
-							class="icon-search"
-							src="../assets/svg/search.svg"
-							alt="search"
-						/>
-					</button>
-				</div>
-
-				<div class="flex-column">
+			<ul class="nav-bar-secondary nav-bar-links">
+				<a href="./public/login.html" class="flex-column">
 					<i class="fas fa-user btn-icon"></i>
 					<span class="text-xxs">Login</span>
-				</div>
+				</a>
 				<div class="flex-column">
 					<div class="badge-wrapper">
-						<a href="./public/cart-page.html">
+						<a href="./public/wishlist-page.html">
 							<i class="fas fa-heart btn-icon"></i>
 							<span class="badge badge-top badge-s badge-red">11</span>
 						</a>
@@ -59,7 +53,7 @@
 				</div>
 				<div class="flex-column">
 					<div class="badge-wrapper">
-						<a href="./public/product-page.html"
+						<a href="./public/cart-page.html"
 							><i class="fas fa-shopping-cart btn-icon"></i>
 							<span class="badge badge-top badge-s badge-red">11</span></a
 						>
@@ -67,6 +61,11 @@
 					<span class="text-xxs">Cart</span>
 				</div>
 			</ul>
+			<a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+			</a>
 			<ul class="drawer" id="drawer">
 				<div class="drawer-header">
 					<a href="./index.html" class="nav-bar-logo">ASIMOV∞</a>
@@ -76,17 +75,21 @@
 				</div>
 
 				<li class="list-item">
-					<a href="./index.html" class="link-text">Home</a>
+					<a href="./index.html" class="link-text">Profile</a>
 				</li>
 				<li class="list-item">
-					<a href="./public/product-page.html" class="link-text"
-						>Documentation</a
-					>
+					<a href="./public/product-page.html" class="link-text">Orders</a>
+				</li>
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Settings</a>
+				</li>
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Cart</a>
 				</li>
 			</ul>
 		</nav>
 		<div class="main-container main-container-gutter">
-			<div class="catergory-container gap-l grid-4-column-s">
+			<div class="catergory-container gap-l grid-6-column">
 				<div class="img-container card-shadow-dark">
 					<img
 						src="../assets/jpg/dune book.jpg"
@@ -173,48 +176,33 @@
 		</div>
 		<footer class="footer flex-column">
 			<p>Made by poornima</p>
-			<ul class="social-links list-non-bullet flex-center">
+			<ul class="flex-center">
 				<li class="list-item-inline">
-					<a
-						class="link"
-						href="https://github.com/poornima-alugubelly"
-						target="_blank"
-					>
+					<a href="https://github.com/poornima-alugubelly" target="_blank">
 						<i class="fa-fw fab fa-github fa-2x btn-icon"></i>
 					</a>
 				</li>
-				<li class="list-item-inline">
+				<li>
 					<a
-						class="link"
 						href="https://www.linkedin.com/in/poornima-alugubelly-aa13291b6/"
 						target="_blank"
 					>
 						<i class="fa-fw fab fa-linkedin fa-2x btn-icon"></i>
 					</a>
 				</li>
-				<li class="list-item-inline">
-					<a
-						class="link"
-						href="https://twitter.com/Moony_codes "
-						target="_blank"
-					>
+				<li>
+					<a href="https://twitter.com/Moony_codes " target="_blank">
 						<i class="fa-fw fab fa-twitter fa-2x btn-icon"></i>
 					</a>
 				</li>
 			</ul>
 			<small>© 2022 Asimov Creations</small>
-			<small
-				><a class="acknowledgement" href="https://storyset.com/technology"
-					>Technology illustrations by Storyset</a
-				>
-				<a href="https://storyset.com/online"
-					>Online illustrations by Storyset</a
-				>
-				-->
-				<a href="https://storyset.com/business"
+
+			<small class="text-xxs"
+				><a href="https://storyset.com/business"
 					>Business illustrations by Storyset</a
-				>
-			</small>
+				></small
+			>
 		</footer>
 	</body>
 </html>

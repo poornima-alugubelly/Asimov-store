@@ -13,11 +13,83 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="/src/css/header.css" />
-		<link rel="stylesheet" href="/src/css/mainpage.css" />
 		<link rel="stylesheet" href="/src/css/cartpage.css" />
-		<link rel="stylesheet" href="/src/css/productpage.css" />
 	</head>
 	<body>
+		<nav class="nav-bar shadow-bottom">
+			<div class="nav-bar-primary">
+				<a href="../index.html" class="nav-bar-logo">ASIMOV∞</a>
+				<ul class="nav-bar-links">
+					<li>
+						<a href="../index.html" class="link-text link-active">Home</a>
+					</li>
+					<li>
+						<a href="./product-page.html" class="link-text">Shop Now</a>
+					</li>
+				</ul>
+			</div>
+			<div class="search-bar input">
+				<input type="text" />
+				<button>
+					<img
+						class="icon-search"
+						src="../assets/svg/search.svg"
+						alt="search"
+					/>
+				</button>
+			</div>
+
+			<ul class="nav-bar-secondary nav-bar-links">
+				<a href="./login.html" class="flex-column">
+					<i class="fas fa-user btn-icon"></i>
+					<span class="text-xxs">Login</span>
+				</a>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<a href="./wishlist-page.html">
+							<i class="fas fa-heart btn-icon"></i>
+							<span class="badge badge-top badge-s badge-red">11</span>
+						</a>
+					</div>
+					<span class="text-xxs">Wish List</span>
+				</div>
+				<div class="flex-column">
+					<div class="badge-wrapper">
+						<a href="./cart-page.html"
+							><i class="fas fa-shopping-cart btn-icon"></i>
+							<span class="badge badge-top badge-s badge-red">11</span></a
+						>
+					</div>
+					<span class="text-xxs">Cart</span>
+				</div>
+			</ul>
+			<a href="#" class="toggle-btn drawer-toggle" data-drawer-target="#drawer">
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+				<span class="toggle-bar"></span>
+			</a>
+			<ul class="drawer" id="drawer">
+				<div class="drawer-header">
+					<a href="./index.html" class="nav-bar-logo">ASIMOV∞</a>
+					<button class="btn btn-dismiss">
+						<img src="./assets/SVG/dismiss-blue.svg" alt="" />
+					</button>
+				</div>
+
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Profile</a>
+				</li>
+				<li class="list-item">
+					<a href="./public/product-page.html" class="link-text">Orders</a>
+				</li>
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Settings</a>
+				</li>
+				<li class="list-item">
+					<a href="./index.html" class="link-text">Cart</a>
+				</li>
+			</ul>
+		</nav>
 		<div class="cart-page-container">
 			<h2 class="padding-l text-center">My Cart</h2>
 			<div class="grid-60-40 gap-m">
@@ -144,5 +216,35 @@
 				</div>
 			</div>
 		</div>
+		<footer class="footer flex-column">
+			<p>Made by poornima</p>
+			<ul class="flex-center">
+				<li>
+					<a href="https://github.com/poornima-alugubelly" target="_blank">
+						<i class="fa-fw fab fa-github fa-2x btn-icon"></i>
+					</a>
+				</li>
+				<li>
+					<a
+						href="https://www.linkedin.com/in/poornima-alugubelly-aa13291b6/"
+						target="_blank"
+					>
+						<i class="fa-fw fab fa-linkedin fa-2x btn-icon"></i>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/Moony_codes " target="_blank">
+						<i class="fa-fw fab fa-twitter fa-2x btn-icon"></i>
+					</a>
+				</li>
+			</ul>
+			<small>© 2022 Asimov Creations</small>
+
+			<small class="text-xxs"
+				><a href="https://storyset.com/business"
+					>Business illustrations by Storyset</a
+				></small
+			>
+		</footer>
 	</body>
 </html>
