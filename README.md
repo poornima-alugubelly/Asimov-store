@@ -1,4 +1,5 @@
 # Asimov-store
+An ecommerce site for sci-fi enthusiasts
 ## Pages currently present
   * [Home](https://asimov-store.netlify.app/)
   * [Product Listing](https://asimov-store.netlify.app/public/product-page.html)
